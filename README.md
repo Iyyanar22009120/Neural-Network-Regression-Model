@@ -44,8 +44,8 @@ Plot the performance plot
 Evaluate the model with the testing data.
 
 ## PROGRAM
-### Name:LEANN JOBY MATHEW
-### Register Number:212222230074
+### Name:IYYANAR S
+### Register Number:212222240036
 ```python
 class NeuralNet(nn.Module):
   def __init__(self):
