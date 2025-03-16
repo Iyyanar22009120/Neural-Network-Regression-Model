@@ -110,7 +110,8 @@ plt.show()
 
 ### New Sample Data Prediction
 
-![image](https://github.com/user-attachments/assets/ffdc1b0d-d1cc-4199-9226-7ca81d4c28b8)
+![image](https://github.com/user-attachments/assets/e794cf5a-ec18-4728-a93a-0fa1c81f65dc)
+
 
 
 ## RESULT
