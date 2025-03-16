@@ -80,16 +80,33 @@ def train_model(ai_brain, X_train, y_train, criterion, optimizer, epochs=4000) :
     if epoch % 200 == 0:
       print(f'Epoch [{epoch}/{epochs}], Loss: {loss.item():.6f}')
 ```
+```
+ train_model(ai_brain, X_train_tensor, y_train_tensor, criterion, optimizer)
+
+
+with torch.no_grad():
+    test_loss = criterion(ai_brain(X_test_tensor), y_test_tensor)
+    print(f'Test Loss: {test_loss.item():.6f}')
+
+import matplotlib.pyplot as plt
+loss_df.plot()
+plt.xlabel("Epochs")
+plt.ylabel("Loss")
+plt.title("Loss during Training")
+plt.show()
+```
 ## Dataset Information
 
-![image](https://github.com/user-attachments/assets/b560342c-3a35-47ad-812f-29808c6959ab)
+![image](https://github.com/user-attachments/assets/deb59785-0375-4cfa-a771-ae95de4d6f00)
+
 
 
 ## OUTPUT
 
 ### Training Loss Vs Iteration Plot
 
-![image](https://github.com/user-attachments/assets/101c949a-d33b-4780-be31-41634e6fb8e3)
+![image](https://github.com/user-attachments/assets/52ec49ee-4d8c-43a8-8469-60ec821a5f1f)
+
 
 ### New Sample Data Prediction
 
